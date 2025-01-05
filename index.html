@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="build.css" />
+    <script src="anim.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Stats preview card component</title>
+  </head>
+  <body
+    class="bg-Very_dark_blue_main_background min-h-screen flex items-center justify-center p-6 md:p-0"
+  >
+    <div
+      class="w-[90%] max-w-[1100px] flex flex-col bg-Dark_desaturated_blue_card_background md:flex-row-reverse gap-4 rounded-xl overflow-hidden drop-shadow-2xl"
+    >
+      <div
+        class="bg-cover bg-center bg-no-repeat w-full md:bg-[url('./images/image-header-desktop.jpg')] md:basis-1/2 relative after:absolute after:bg-light_vio after:z-10 after:w-full after:h-full after:inset-0 after:mix-blend-multiply"
+      >
+        <img
+          class="block w-full md:hidden"
+          src="./images/image-header-mobile.jpg"
+          alt=""
+        />
+      </div>
+      <div class="p-6 sm:p-12 lg:p-16 md:basis-1/2 custom-text">
+        <div class="text-center font-lexend md:text-left">
+          <h1 class="text-White_main_heading_stats text-2xl lg:text-4xl">
+            Get <span class="text-Soft_violet_accent clr">insights</span> that
+            help your business grow.
+          </h1>
+          <p
+            class="text-Slightly_transparent_white_main_paragraph text-center mt-3 sm:mt-8 md:text-sm text-[0.85rem] md:text-left"
+          >
+            Discover the benefits of data analytics and make better descisions
+            regarding revenue, customer expirience, and overall efficiency.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center sm:flex-row text-center mt-8 gap-6 sm:mt-12 lg:mt-24 sm:justify-between lg:text-left bg-Very_dark_blue_main_background p-4 drop-shadow-2xl rounded-lg"
+        >
+          <div>
+            <h3 class="text-White_main_heading_stats font-lexend lg:text-2xl">
+              10k+
+            </h3>
+            <p
+              class="text-Slightly_transparent_white_main_paragraph font-lexend uppercase text-[0.8rem] font-extralight"
+            >
+              companies
+            </p>
+          </div>
+          <div>
+            <h3 class="text-White_main_heading_stats font-lexend lg:text-2xl">
+              314
+            </h3>
+            <p
+              class="text-Slightly_transparent_white_main_paragraph font-lexend uppercase text-[0.8rem] font-extralight"
+            >
+              templates
+            </p>
+          </div>
+          <div>
+            <h3 class="text-White_main_heading_stats font-lexend lg:text-2xl">
+              12M+
+            </h3>
+            <p
+              class="text-Slightly_transparent_white_main_paragraph font-lexend uppercase text-[0.8rem] font-extralight"
+            >
+              Queries
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
